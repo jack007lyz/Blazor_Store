@@ -1,3 +1,4 @@
+global using J7z_E_Commerce.Shared;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);

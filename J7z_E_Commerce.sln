@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "J7z_E_Commerce.Server", "Server\J7z_E_Commerce.Server.csproj", "{1FAA44DB-FE72-4359-93F3-3719B893FBFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J7z_E_Commerce.Server", "Server\J7z_E_Commerce.Server.csproj", "{1FAA44DB-FE72-4359-93F3-3719B893FBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "J7z_E_Commerce.Client", "Client\J7z_E_Commerce.Client.csproj", "{1FCB1652-C04D-44C3-8F4E-BFCF6D24C17E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J7z_E_Commerce.Client", "Client\J7z_E_Commerce.Client.csproj", "{1FCB1652-C04D-44C3-8F4E-BFCF6D24C17E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "J7z_E_Commerce.Shared", "Shared\J7z_E_Commerce.Shared.csproj", "{3AC16FC5-7415-41CB-A7F1-77FAC553DAC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "J7z_E_Commerce.Shared", "Shared\J7z_E_Commerce.Shared.csproj", "{3AC16FC5-7415-41CB-A7F1-77FAC553DAC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
