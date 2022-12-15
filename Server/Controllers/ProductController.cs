@@ -1,4 +1,5 @@
-﻿using J7z_E_Commerce.Server.Data;
+﻿using Azure;
+using J7z_E_Commerce.Server.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,17 +9,17 @@ namespace J7z_E_Commerce.Server.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly DataContext _context;
+        private readonly IProductService _productService;
 
-        public ProductController(DataContext dataContext)
+        public ProductController(IProductService productService)
         {
-            _context = dataContext;
+            _productService = productService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProduct()
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProduct()
         {
-            var products = await _context.products.ToListAsync();
+            var products = await _productService.GetProductsAsync();
             return Ok(products);
         }
 

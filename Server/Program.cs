@@ -1,7 +1,9 @@
 global using J7z_E_Commerce.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using J7z_E_Commerce.Server.Data;
+global using J7z_E_Commerce.Server.Services.ProductService;
 using Microsoft.AspNetCore.ResponseCompression;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,8 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
