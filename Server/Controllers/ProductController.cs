@@ -31,5 +31,13 @@ namespace J7z_E_Commerce.Server.Controllers
             return Ok(product);
         }
 
+        [HttpGet]
+        [Route("category/{categoryUrl}")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProductsByCategory(string categoryUrl)
+        {
+            var product = await _productService.GetProductsByCategory(categoryUrl);
+            return Ok(product);
+        }
+
     }
 }
