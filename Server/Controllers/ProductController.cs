@@ -17,10 +17,18 @@ namespace J7z_E_Commerce.Server.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProduct()
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProducts()
         {
             var products = await _productService.GetProductsAsync();
             return Ok(products);
+        }
+
+        [HttpGet]
+        [Route("{productId}")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProduct(int productId)
+        {
+            var product = await _productService.GetProductAsync(productId);
+            return Ok(product);
         }
 
     }
