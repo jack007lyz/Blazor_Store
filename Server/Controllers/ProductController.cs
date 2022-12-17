@@ -39,5 +39,21 @@ namespace J7z_E_Commerce.Server.Controllers
             return Ok(product);
         }
 
+        [HttpGet]
+        [Route("search/{searchText}")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> SearchProducts(string searchText)
+        {
+            var product = await _productService.SearchProducts(searchText);
+            return Ok(product);
+        }
+
+        [HttpGet]
+        [Route("searchsuggestions/{searchText}")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProductSearchSuggestions(string searchText)
+        {
+            var product = await _productService.GetProductSearchSuggestions(searchText);
+            return Ok(product);
+        }
+
     }
 }
