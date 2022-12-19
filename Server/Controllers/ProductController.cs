@@ -55,5 +55,13 @@ namespace J7z_E_Commerce.Server.Controllers
             return Ok(product);
         }
 
+        [HttpGet]
+        [Route("featured")]
+        public async Task<ActionResult<ServiceResponse<List<Product>>>> GetFeaturedProducts()
+        {
+            var product = await _productService.GetFeaturedProducts();
+            return Ok(product);
+        }
+
     }
 }

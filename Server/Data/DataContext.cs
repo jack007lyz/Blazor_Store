@@ -56,7 +56,8 @@ namespace J7z_E_Commerce.Server.Data
                         Title = "Star Wars Episode I: The Phantom Menace",
                         Description = "written by Terry Brooks and published on April 21, 1999",
                         ImageUrl = "https://upload.wikimedia.org/wikipedia/en/c/ca/Phantommenacenovel_obiwan.jpg",
-                        CategoryId = 1
+                        CategoryId = 1,
+                        Featured = true
                     },
                     new Product
                     {
@@ -81,6 +82,7 @@ namespace J7z_E_Commerce.Server.Data
                         Title = "The Matrix",
                         Description = "The Matrix is a 1999 science fiction action film written and directed by the Wachowskis, and produced by Joel Silver. Starring Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, and Joe Pantoliano, and as the first installment in the Matrix franchise, it depicts a dystopian future in which humanity is unknowingly trapped inside a simulated reality, the Matrix, which intelligent machines have created to distract humans while using their bodies as an energy source. When computer programmer Thomas Anderson, under the hacker alias \"Neo\", uncovers the truth, he \"is drawn into a rebellion against the machines\" along with other people who have been freed from the Matrix.",
                         ImageUrl = "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+                        Featured = true
                     },
                     new Product
                     {
@@ -106,6 +108,7 @@ namespace J7z_E_Commerce.Server.Data
                         Title = "Half-Life 2",
                         Description = "Half-Life 2 is a 2004 first-person shooter game developed and published by Valve. Like the original Half-Life, it combines shooting, puzzles, and storytelling, and adds features such as vehicles and physics-based gameplay.",
                         ImageUrl = "https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg",
+                        Featured = true
 
                     },
                     new Product
